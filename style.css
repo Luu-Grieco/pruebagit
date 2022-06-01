@@ -1,0 +1,226 @@
+body{ /*Siempre arriba*/
+   background-image: linear-gradient( #59442A,#BFB169, #735634 );
+}
+
+/*@media screen and (min-width:768px){ /*Vista desktop*/
+    @media screen and(min-width:0px) and (max-width: 767px) {/*Vista responsive*/
+    body{
+    background-color:000000 }
+     }
+    
+
+/*Iniciamos estilos en header*/
+@media screen and(min-width:0px) and (max-width: 767px) {/*Vista responsive*/
+/*@media screen and (min-width:768px){ /*Vista desktop*/
+.headerContainer{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows:repeat(1, 1fr) ;
+    grid-template-areas: 
+    "logo  h1  nav   nav"; /*Para saber cuántas columnas ocupa todo*/
+}
+}
+
+img{
+    width:50px;
+    height:50px;
+}
+.logo{
+    grid-area: logo;
+}
+nav{
+    grid-area: nav;  
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navBar li a{
+   list-style: none;
+   text-decoration: none;
+   font-family: 'Prompt', sans-serif;
+   color: black;
+}
+
+.navBar li a:hover{  /*Cambia de color cuando te posicionas sobre el menú*/
+    color: burlywood
+}
+
+h1{ 
+    grid-area: h1;
+    color:#D9C6B0;
+    font-family: 'Archivo', sans-serif;
+}
+
+/*Terminamos estilos en header*/
+/*Iniciamos estilos en main*/
+
+.mainContainer{
+    grid-template-columns:repeat(4, 500px) ;
+    grid-template-rows:repeat(2, 50px) ;
+    grid-template-areas: 
+    "sectionDiv sectionDiv sectionDiv . "
+    "productos  productosDiv  productosGatos ." /*Para saber cuántas columnas ocupa todo*/
+    ;
+}
+
+.seccionDiv{
+    grid-area: sectionDiv;
+    font-family: 'Prompt', sans-serif;
+}
+
+
+#productos{
+    grid-area: productos;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* inicio productos */
+
+.productos-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-color1{
+    background-color: #A68D77;
+    border: 2px black solid;
+    width: 600px;
+    height: 600;
+    animation-name: div_en_movimiento;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    position: relative;
+    animation-direction: alternate; 
+}
+
+@keyframes div_en_movimiento {
+    0%   {background-color:#0D0D0C; left:0px; top:0px;}
+    25%  {background-color:#262626; left:200px; top:0px;}
+    50%  {background-color:#AEB7BF; left:200px; top:200px;}
+    75%  {background-color:#0D0D0C; left:0px; top:200px;}
+    100% {background-color:#262626; left:0px; top:0px;} 
+}
+
+/* estilo de imagen */
+.img{
+    transition: height 2s, width 2s;
+}
+
+.img:hover{
+    height: 400px;
+    width: 400px;  
+}
+
+.titulo-cubo{
+    background-color: black;
+    color: azure;
+}
+
+
+/* inicio vet */
+#vet{
+    font-family: 'Prompt', sans-serif;
+}
+
+.vet-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.vet-gatos{
+    font-family: 'Prompt', sans-serif;
+}
+
+/* inicio form */
+.form{
+    display: flex;
+    justify-content: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+.button{
+        background-color: black;
+        font-family: 'Prompt', sans-serif;
+        border: none;
+        color: white;
+        padding: 10px;
+}
+
+
+/* inicio footer*/
+@media screen and(min-width:0px) and (max-width: 767px) {/*Vista responsive*/
+/*@media screen and (min-width:768px){ /*Vista desktop*/
+.footer{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    grid-template-rows:repeat(1, 1fr) ;
+    grid-template-areas: 
+    "redes  h4 h4 nosotros ",
+}
+}
+
+.footerRedes{
+    grid-area: footerRedes;
+    font-family: 'Prompt', sans-serif;
+}
+
+.footerRedes li {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.footerRedes li a {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Prompt', sans-serif;
+    color: black;
+  
+    
+}
+
+.footerRedes li a:hover{  /*Cambia de color cuando te posicionas sobre el menú*/
+    color: burlywood;
+}
+
+.footerNosotros{
+    grid-area: footerRedes;
+}
+
+.footerNosotros li{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerNosotros li a {
+    text-decoration: none;
+    font-family: 'Prompt', sans-serif;
+    color: black;
+}
+
+.footerNosotros li a:hover{  /*Cambia de color cuando te posicionas sobre el menú*/
+    color: burlywood;
+}
+
+
+/*Estilos iniciarSesion*/
+h2{
+    font-family: 'Prompt', sans-serif; 
+}
+
+.formSesion{
+    font-family: 'Prompt', sans-serif; 
+}
+
+/*Estilos crearCuenta*/
+h2{
+    font-family: 'Prompt', sans-serif; 
+}
+
+.formSesion{
+    font-family: 'Prompt', sans-serif; 
+}

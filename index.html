@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Llamamos a nuestras líneas de estilos-->
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Prompt&display=swap" rel="stylesheet">
+    <title>MichiWeb</title>
+</head>
+<body>
+    <header class="headerContainer">
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <h1>Michi Web</h1> 
+   
+    <nav>
+        <ul class="navBar">
+            <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+            <li><a href="crearCuenta.html">Crear Cuenta</a></li>
+            <li><a href="#todoMichis">Todo sobre michis</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="mainContainer"> 
+    <div class="div-color1"><h4 class="titulo-cubo">Bienvenidos a la web de los michis</h4></div>
+    <section>     
+        <article>
+                <div class="seccionDiv">
+                    <h2>La Web de los michis</h2>
+                    <p>Tener a un gato a nuestro lado nos aporta multitud de beneficios. Mejoran nuestra calidad de vida, nos ayudan a 
+                        mantenernos en forma, reducen el estrés y nos hacen ser más responsables y respetuosos con los demás.
+                        Para devolverles todo lo que nos dan aquí encontrarás contenidos útiles para cuidarlos.</p>
+                    
+                    <p>Los gatos son asombrosos, están llenos de misterio combinado con actitud. No todas las personas son amantes de los gatos porque son los gatos quienes eligen a quien querer. Si eres uno de los elegidos siéntete afortunado, porque podrás disfrutar del privilegio de su amistad, por eso dicen que hasta el más pequeño de los gatos es una obra maestra. Si estás de acuerdo con este aforismo, bienvenido, eres uno más de los nuestros, un auténtico <span><strong>cat lover</strong></span>.</p>   
+               </div>  
+           </article>     
+         </section>
+
+    <section>
+        <article>
+            <div class="seccionDiv">
+                <p>Entre fanáticos de los gatos nos sabemos reconocer unos a otros. Tenemos características que nos distinguen, ¿Será que estas son similares a las de nuestras adoradas mascotas? Vamos a averiguarlo: </p>
+                <ul>
+                     <li>Los fanáticos de los gatos somos más introvertidos y tímidos que los amantes de los perros.</li>
+                     <li>Buscamos más comprensión que diversión.</li>
+                     <li>Somos más sensibles.</li>
+                     <li>Tenemos una mente más abierta.</li>
+                     <li>Somos más hogareños.</li>
+                     <li>Tenemos un lado intelectual.</li>
+                     <li>Somos más independientes</li>
+                </ul> 
+            </div>
+        </article>
+            </section>  
+   <br>
+   <br>
+   <br>
+    <section id="productos">      
+        <h2>Los mejores alimentos para tu mascota</h2>
+        <p>Cada fórmula se crea para brindar una nutrición que se adapte a las necesidades de salud de tu mascota, independientemente de su raza, edad o estilo de vida.</p>
+        
+        <article>
+            <div class="productos-div">
+                <div class="productos-gatos">
+                    <h3>NutraPro Nuggets</h3>
+                    <img class="img" src="./img/motherMichi.png" alt="">
+                    <p>Precio $ 2000</p>
+                    <button class="button" type="submit">Comprar</button>
+                </div>
+                <div class="productos-gatos">
+                    <h3>NutraPro Nuggets</h3>
+                    <img class="img" src="./img/persianMichi.png" alt="">
+                    <p>Precio $ 1800</p>
+                    <button class="button" type="submit">Comprar</button>
+                </div>
+                <div class="productos-gatos">
+                    <h3>NutraPro Nuggets</h3>
+                    <img class="img" src="./img/urinaryMichi.png" alt="">
+                    <p>Precio $ 1500</p>
+                    <button class="button" type="submit">Comprar</button>
+                </div>
+            </div>
+        </article>     
+</section>
+   <br>
+   <br>
+   <br>
+
+<section id="vet">      
+    <h2>Los mejores veterinarios de la zona</h2>
+    <p>Asesoramiento, artículos e información para ayudarte a cuidar a tu gato.</p>
+    <p>Elige al mejor doctor para tu michi.</p>
+    
+    <article>
+        <div class="vet-div">
+            <div class="vet-gatos">
+                <h3>Turnos veterinarios</h3>
+                <img class="img" src="./img/vetCat.avif" alt="">
+                <br>
+                <button  class="button" type="submit">Consutar precio</button>
+            </div>
+            <div class="vet-gatos">
+                <h3>Veterinarios 24 hs</h3>
+                <img class="img" src="./img/vetCat.avif" alt="">
+                <br>
+                <button class="button" type="submit">Consultar precio</button>
+            </div>      
+        </div>
+    </article>     
+</section>
+
+<div class="form">
+    <h2>Dejanos tu pregunta</h2>
+    <br>
+    <form action="" method="post">
+        <ul>
+         <div>
+           <label for="name">Nombre:</label>
+           <input type="text" id="name" name="user_name">
+         </div>
+         <div>
+           <label for="mail">Correo electrónico:</label>
+           <input type="email" id="mail" name="user_mail">
+         </div>
+         <div>
+           <label for="msg">Mensaje:</label>
+           <textarea id="msg" name="user_message"></textarea>
+         </div>
+         <div>
+             <button class="button" type="submit">Enviar</button>
+         </div>
+        </ul>
+       </form>
+</div>
+</main>
+    <hr>
+    <footer class="footer">
+        <div>
+            <ul class="footerRedes">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twtter</a></li>
+                <li><a href="#">Instagram</a></li>        
+            </ul>   
+         </div>
+        <div >
+            <ul class="footerNosotros">
+                <li ><a href="#">Contactanos</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Pago y envío</a></li>
+                <li><a href="#">Legales</a></li>
+                <li><a href="#">Pet shops</a></li>
+            </ul>
+            </div>
+    </footer>
+</body>
+</html>
+

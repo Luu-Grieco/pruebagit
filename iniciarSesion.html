@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Llamamos a nuestras líneas de estilos-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Prompt&display=swap" rel="stylesheet">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <header class="headerContainer">
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <h1>Michi Web</h1> 
+   
+    <nav>
+        <ul class="navBar">
+            <li><a href="index.html">Volver a inicio</a></li>
+            <li><a href="crearCuenta.html">Crear Cuenta</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="mainContainer"> 
+    <div class="div-color1"><h4 class="titulo-cubo">Bienvenidos a la web de los michis</h4></div>
+    <nav>
+
+
+        <div>
+    <h2>Inicia sesión en la Michi Web</h2>
+        </div>
+    </nav>
+    <fieldset class="formSesion">
+    <form action="/action_page.php">
+        <label for="username">Usuario:</label><br>
+        <input type="text" id="required" name="username"><br>
+        <label for="pwd">Contraseña:</label><br>
+        <input type="password" id="required" name="pwd"><br><br>
+        <input class="button" type="submit" value="Iniciar sesión">
+        <br>
+        <br>
+        <a href="meOlvide">Olvidé mi contraseña</a> 
+        <br>
+        <br>
+        <div>¿Todavía no tenes cuenta?  <a href="crearCuenta.html">Registrate</a> </div>
+      </form>
+    </fieldset>
+    <br>
+    
+    <hr>
+    <footer class="footer">
+        <div>
+            <ul class="footerRedes">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twtter</a></li>
+                <li><a href="#">Instagram</a></li>        
+            </ul>   
+         </div>
+        <div >
+            <ul class="footerNosotros">
+                <li ><a href="#">Contactanos</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Pago y envío</a></li>
+                <li><a href="#">Legales</a></li>
+                <li><a href="#">Pet shops</a></li>
+            </ul>
+            </div>
+    </footer>
+</body>
+</html>
